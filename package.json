@@ -7,7 +7,7 @@
     "node": "^20.19.0 || ^22.12.0 || ^24.0.0"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development gulp start:dev",
+    "start": "ng serve --project ng-zorro-antd-doc",
     "test": "ng test --watch=false --progress=false --browsers=ChromeHeadlessCI --code-coverage",
     "test:watch": "gulp test:watch --tags",
     "test:schematics": "gulp build:schematics && gulp test:schematics",

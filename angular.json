@@ -19,13 +19,6 @@
             "styles": [
               "site/styles.less"
             ],
-            "stylePreprocessorOptions": {
-              "lessOptions": {
-                "globalVars": {
-                  "root-entry-name": "default"
-                }
-              }
-            },
             "allowedCommonJsDependencies": [
               "@ant-design/colors"
             ]
