@@ -414,7 +414,7 @@ import { NzTagComponent } from 'ng-zorro-antd/tag';
                 <div class="explore-icon navy">
                   <span nz-icon nzType="layout"></span>
                 </div>
-                <h3 class="explore-card-title">Setup — Definition</h3>
+                <h3 class="explore-card-title">Figma Design - Setup — Definition</h3>
                 <p class="explore-card-desc">
                   A pixel-perfect implementation of a complex admin interface from Figma — complete
                   with sidebar navigation, breadcrumbs, and interactive toggle controls.
