@@ -19,18 +19,19 @@
             "styles": [
               "site/styles.less"
             ],
+            "stylePreprocessorOptions": {
+              "lessOptions": {
+                "globalVars": {
+                  "root-entry-name": "default"
+                }
+              }
+            },
             "allowedCommonJsDependencies": [
               "@ant-design/colors"
             ]
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "site/environments/environment.ts",
-                  "with": "site/environments/environment.prod.ts"
-                }
-              ],
               "outputHashing": "all"
             },
             "development": {
