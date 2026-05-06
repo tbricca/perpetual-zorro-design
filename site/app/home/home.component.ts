@@ -192,12 +192,21 @@ import { NzTagComponent } from 'ng-zorro-antd/tag';
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
+      align-items: stretch;
+    }
+
+    .explore-grid ::ng-deep nz-card,
+    .explore-grid ::ng-deep .ant-card,
+    .explore-grid ::ng-deep .ant-card-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .explore-card-inner {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      height: 100%;
     }
 
     .explore-icon {
@@ -226,6 +235,7 @@ import { NzTagComponent } from 'ng-zorro-antd/tag';
       color: #8c8c8c;
       line-height: 1.55;
       margin: 0 0 16px;
+      flex: 1;
     }
 
     .explore-link {
