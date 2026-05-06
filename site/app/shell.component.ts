@@ -1,6 +1,5 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,16 +9,18 @@ import { filter } from 'rxjs/operators';
     .app-shell {
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .app-header {
       position: sticky;
       top: 0;
-      z-index: 50;
+      z-index: 200;
       background: #fff;
       border-bottom: 1px solid #f0f0f0;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      flex-shrink: 0;
     }
 
     .header-inner {
@@ -71,50 +72,40 @@ import { filter } from 'rxjs/operators';
 
     .main-content {
       flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
   `],
   template: `
     <div class="app-shell">
-      @if (!isFullLayout()) {
-        <header class="app-header">
-          <div class="header-inner">
-            <a class="brand-name" routerLink="/">Perpetual Limited</a>
-            <nav class="header-nav" role="navigation" aria-label="Main navigation">
-              <a class="nav-link"
-                 routerLink="/"
-                 routerLinkActive="nav-active"
-                 [routerLinkActiveOptions]="{exact: true}">
-                Home
-              </a>
-              <a class="nav-link"
-                 routerLink="/showcase"
-                 routerLinkActive="nav-active">
-                Components
-              </a>
-              <a class="nav-link"
-                 routerLink="/definitions"
-                 routerLinkActive="nav-active">
-                Setup - Definition
-              </a>
-            </nav>
-          </div>
-        </header>
-      }
+      <header class="app-header">
+        <div class="header-inner">
+          <a class="brand-name" routerLink="/">Perpetual Limited</a>
+          <nav class="header-nav" role="navigation" aria-label="Main navigation">
+            <a class="nav-link"
+               routerLink="/"
+               routerLinkActive="nav-active"
+               [routerLinkActiveOptions]="{exact: true}">
+              Home
+            </a>
+            <a class="nav-link"
+               routerLink="/showcase"
+               routerLinkActive="nav-active">
+              Components
+            </a>
+            <a class="nav-link"
+               routerLink="/definitions"
+               routerLinkActive="nav-active">
+              Setup - Definition
+            </a>
+          </nav>
+        </div>
+      </header>
       <main class="main-content">
         <router-outlet />
       </main>
     </div>
   `
 })
-export class ShellComponent {
-  private readonly router = inject(Router);
-  readonly isFullLayout = signal(this.router.url.startsWith('/definitions'));
-
-  constructor() {
-    this.router.events
-      .pipe(filter(e => e instanceof NavigationEnd))
-      .subscribe((e: NavigationEnd) => {
-        this.isFullLayout.set(e.urlAfterRedirects.startsWith('/definitions'));
-      });
-  }
-}
+export class ShellComponent {}

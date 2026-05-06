@@ -7,19 +7,20 @@ import { ToggleSwitchComponent } from './toggle-switch.component';
   imports: [ToggleSwitchComponent],
   styles: [`
     :host {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow: hidden;
       font-family: Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     /* ─── Page Layout ─── */
     .def-page {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
       display: flex;
       flex-direction: column;
-      background: #fff;
+      flex: 1;
       overflow: hidden;
+      background: #fff;
     }
 
     /* ─── Top Header ─── */

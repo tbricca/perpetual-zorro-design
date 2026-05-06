@@ -62,6 +62,12 @@ import { NzTypographyComponent } from 'ng-zorro-antd/typography';
     NzTypographyComponent
   ],
   styles: [`
+    :host {
+      display: block;
+      flex: 1;
+      overflow-y: auto;
+    }
+
     .showcase-page {
       max-width: 1200px;
       margin: 0 auto;
