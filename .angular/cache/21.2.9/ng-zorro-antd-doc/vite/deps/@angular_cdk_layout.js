@@ -3,8 +3,8 @@ import {
   MediaMatcher
 } from "./chunk-N733D4YW.js";
 import "./chunk-K76LFBNU.js";
-import "./chunk-N4DOILP3.js";
 import "./chunk-XGJWE5FW.js";
+import "./chunk-N4DOILP3.js";
 import {
   NgModule,
   setClassMetadata,

@@ -18,35 +18,14 @@ import {
   _getShadowRoot
 } from "./chunk-5R2VQUOI.js";
 import {
-  A,
-  ALT,
-  CONTROL,
-  DOWN_ARROW,
-  END,
-  HOME,
-  LEFT_ARROW,
-  MAC_META,
-  META,
-  NINE,
-  PAGE_DOWN,
-  PAGE_UP,
-  RIGHT_ARROW,
-  SHIFT,
-  TAB,
-  UP_ARROW,
-  Z,
-  ZERO,
-  hasModifierKey
-} from "./chunk-GQDNQF7P.js";
-import {
   coerceElement,
   coerceNumberProperty
 } from "./chunk-NRZQDBPA.js";
 import {
   Platform
 } from "./chunk-K76LFBNU.js";
-import "./chunk-N4DOILP3.js";
 import "./chunk-XGJWE5FW.js";
+import "./chunk-N4DOILP3.js";
 import {
   APP_ID,
   ChangeDetectionStrategy,
@@ -103,6 +82,27 @@ import {
 } from "./chunk-DMY7NSOM.js";
 import "./chunk-HSWANC32.js";
 import "./chunk-WCM3ZIVF.js";
+import {
+  A,
+  ALT,
+  CONTROL,
+  DOWN_ARROW,
+  END,
+  HOME,
+  LEFT_ARROW,
+  MAC_META,
+  META,
+  NINE,
+  PAGE_DOWN,
+  PAGE_UP,
+  RIGHT_ARROW,
+  SHIFT,
+  TAB,
+  UP_ARROW,
+  Z,
+  ZERO,
+  hasModifierKey
+} from "./chunk-GQDNQF7P.js";
 import {
   __spreadProps,
   __spreadValues
