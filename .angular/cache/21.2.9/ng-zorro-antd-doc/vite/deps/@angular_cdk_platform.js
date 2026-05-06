@@ -1,13 +1,15 @@
 import {
+  _isTestEnvironment
+} from "./chunk-VON75VBJ.js";
+import {
+  RtlScrollAxisType,
+  getRtlScrollAxisType,
+  supportsScrollBehavior
+} from "./chunk-GUGIMSVJ.js";
+import {
   normalizePassiveListenerOptions,
   supportsPassiveEventListeners
 } from "./chunk-PY5PYLQN.js";
-import {
-  RtlScrollAxisType,
-  _isTestEnvironment,
-  getRtlScrollAxisType,
-  supportsScrollBehavior
-} from "./chunk-GPVULOKD.js";
 import {
   _getEventTarget,
   _getFocusedElementPierceShadowDom,

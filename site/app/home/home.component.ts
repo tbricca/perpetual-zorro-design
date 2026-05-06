@@ -141,6 +141,11 @@ import { NzTypographyComponent } from 'ng-zorro-antd/typography';
         <span class="cta-text">Explore the full ng-zorro-antd component library</span>
         <a class="cta-link" routerLink="/showcase">View Component Showcase &rarr;</a>
       </div>
+
+      <div class="showcase-cta" style="background: #f0f4fa; border-color: #d0ddf5;">
+        <span class="cta-text" style="color: #002655;">See the Setup - Definition admin page design</span>
+        <a class="cta-link" routerLink="/definitions" style="background: #1C4E80;">View Definitions Page &rarr;</a>
+      </div>
     </div>
   `
 })
