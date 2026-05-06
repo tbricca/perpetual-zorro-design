@@ -38,6 +38,9 @@ import { filter } from 'rxjs/operators';
       color: #141414;
       letter-spacing: -0.01em;
       flex-shrink: 0;
+      text-decoration: none;
+
+      &:hover { color: #1677ff; }
     }
 
     .header-nav {
@@ -75,7 +78,7 @@ import { filter } from 'rxjs/operators';
       @if (!isFullLayout()) {
         <header class="app-header">
           <div class="header-inner">
-            <span class="brand-name">Perpetual Limited</span>
+            <a class="brand-name" routerLink="/">Perpetual Limited</a>
             <nav class="header-nav" role="navigation" aria-label="Main navigation">
               <a class="nav-link"
                  routerLink="/"
