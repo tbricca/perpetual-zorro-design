@@ -14,50 +14,13 @@
             "outputPath": "dist",
             "index": "site/index.html",
             "browser": "site/main.ts",
-            "server": "site/main.server.ts",
             "tsConfig": "site/tsconfig.app.json",
-            "serviceWorker": "ngsw-config.json",
-            "prerender": true,
-            "ssr": {
-              "entry": "site/server.ts"
-            },
-            "assets": [
-              "site/assets",
-              "site/manifest.json",
-              "site/favicon.ico",
-              "site/404.html",
-              "site/google854eb8b183564acb.html",
-              "site/robots.txt",
-              "site/llms.txt",
-              "site/llms-full.txt",
-              "site/llms-full-cn.txt",
-              {
-                "glob": "**/*.md",
-                "input": "site/components",
-                "output": "/components/"
-              },
-              {
-                "glob": "**/*.md",
-                "input": "site/docs",
-                "output": "/docs/"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/@ant-design/icons-angular/src/inline-svg/",
-                "output": "/assets/"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/monaco-editor/min/vs",
-                "output": "/assets/vs/"
-              }
-            ],
+            "assets": [],
             "styles": [
               "site/styles.less"
             ],
             "allowedCommonJsDependencies": [
-              "@ant-design/colors",
-              "cron-parser"
+              "@ant-design/colors"
             ]
           },
           "configurations": {
