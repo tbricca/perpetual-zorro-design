@@ -2,18 +2,26 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import {
-  DownloadOutline,
-  PlusOutline,
-  SearchOutline,
-  UserOutline,
-  SettingOutline,
-  HeartOutline,
-  LikeOutline,
-  BellOutline,
+  AppstoreOutline,
+  ArrowRightOutline,
+  BulbOutline,
   CheckCircleOutline,
   CloseCircleOutline,
+  CodeOutline,
+  DownloadOutline,
+  ExclamationCircleOutline,
+  HeartOutline,
   InfoCircleOutline,
-  ExclamationCircleOutline
+  LikeOutline,
+  PlusOutline,
+  RocketOutline,
+  SearchOutline,
+  SettingOutline,
+  ThunderboltOutline,
+  UserOutline,
+  BellOutline,
+  LayoutOutline,
+  ApiOutline
 } from '@ant-design/icons-angular/icons';
 import { provideNzIcons } from 'ng-zorro-antd/icon';
 
@@ -25,18 +33,26 @@ bootstrapApplication(ShellComponent, {
     provideAnimationsAsync(),
     provideRouter(routes),
     provideNzIcons([
-      DownloadOutline,
-      PlusOutline,
-      SearchOutline,
-      UserOutline,
-      SettingOutline,
-      HeartOutline,
-      LikeOutline,
-      BellOutline,
+      AppstoreOutline,
+      ArrowRightOutline,
+      BulbOutline,
       CheckCircleOutline,
       CloseCircleOutline,
+      CodeOutline,
+      DownloadOutline,
+      ExclamationCircleOutline,
+      HeartOutline,
       InfoCircleOutline,
-      ExclamationCircleOutline
+      LikeOutline,
+      PlusOutline,
+      RocketOutline,
+      SearchOutline,
+      SettingOutline,
+      ThunderboltOutline,
+      UserOutline,
+      BellOutline,
+      LayoutOutline,
+      ApiOutline
     ])
   ]
 }).catch(err => console.error(err));
